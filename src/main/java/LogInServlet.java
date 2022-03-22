@@ -7,7 +7,7 @@ import java.io.IOException;
 import java.util.Map;
 
 @WebServlet(name = "LogIn", value = "/LogIn")
-public class LogIn extends HttpServlet
+public class LogInServlet extends HttpServlet
 {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException

@@ -16,6 +16,26 @@
 
 din saldo er ${sessionScope.konto.saldo}
 
+<br>
+<br>
+<br>
+
+
+<h2> Insæt  </h2>
+
+
+<h1> ${requestScope.fejl}  </h1>
+
+<form action="TransaktionServlet">
+    <label for="fname">Angiv beløb:</label><br>
+    <input type="text" id="fname" name="beløb" value= 0><br>
+
+    <input type="submit" value="indsæt">
+</form>
+
+
+
+
 
 </body>
 </html>
