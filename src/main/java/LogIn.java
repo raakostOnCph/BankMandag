@@ -35,6 +35,16 @@ public class LogIn extends HttpServlet
 
         }
 
+        HttpSession session = request.getSession();
+
+        session.setAttribute("navn", navn);
+        session.setAttribute("konto", konto);
+
+
+
+        request.getRequestDispatcher("WEB-INF/BrugerSide.jsp").forward(request, response);
+        //
+
     }
 
     @Override
