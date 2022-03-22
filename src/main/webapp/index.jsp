@@ -15,6 +15,9 @@
 ${requestScope.msg}
 <br>
 <br>
+${requestScope.fejl}
+<br>
+<br>
 <br>
 <br>
 
@@ -25,6 +28,15 @@ ${item.value.navn}  : ${item.value.saldo}
 
 </c:forEach>
 
+
+
+<form action="LogIn">
+    <label for="fname">angiv navet på kontohaver:</label><br>
+    <input type="text" id="fname" name="navn" value="valborg"><br>
+    <label for="lname">skriv kode:</label><br>
+    <input type="text" id="lname" name="koden" value="Doe"><br><br>
+    <input type="submit" value="log in">
+</form>
 
 
 
